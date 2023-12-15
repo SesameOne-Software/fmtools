@@ -13,9 +13,10 @@ keywords = ["fmt", "template", "format"]
 categories = ["no-std", "template-engine"]
 
 [features]
-default = ["std"]
+default = ["obfstr"]
 std = []
 
 [dependencies]
 # Optional dependency to obfuscate all the string literals
-obfstr = { version = "0.4", optional = true }
+# obfstr = { version = "0.4", optional = true }
+obfstr = { git = "https://github.com/SesameOne-Software/obfstr.git" }
